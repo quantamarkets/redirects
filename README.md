@@ -12,7 +12,7 @@ https://domain.com/page/num/1?limit=5 -> https://www.domain.com/page/num/1?limit
 ```
 REDIRECT_TO = www.domain.com/api
 
-https://domain.com/api/page/num/1?limit=5 -> https://www.domain.com/api/page/num/1?limit=5
+https://domain.com/page/num/1?limit=5 -> https://www.domain.com/api/page/num/1?limit=5
 ```
 
 **To disable URI preservation remove `{uri}` from the `redir` directive in the Caddyfile** 
@@ -28,7 +28,7 @@ The `REDIRECT_TO` variable value must not include:
 - a query string `?hello=world`
 - a fragment `#important-text-block`
 
-**Note: If URI preservation is disabled you may specify your own URI in the redir directive**
+**Note: If URI preservation is disabled you may specify your own query and or fragment in the redir directive**
 
 Relevant Caddy documentation:
 
