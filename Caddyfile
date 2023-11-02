@@ -16,7 +16,7 @@
     }
 
     # send a 301 redirect to the client with the host from the set variable
-    redir https://{$REDIRECT_TO}{uri} permanent # by using {uri} the redirect will preserve the incoming uri
+    redir https://{$REDIRECT_TO} permanent # by using {uri} the redirect will preserve the incoming uri
 
     # health check for railway
     respond /health 200
